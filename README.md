@@ -53,6 +53,9 @@ php artisan l5-swagger:generate
 
 After this open http://localhost:8000/docs
 
+## Time spent
+https://wakatime.com/@Quasar/projects/axklxsdolz?start=2024-05-17&end=2024-05-20
+
 ## License
 
 It's a test application for the public audience
