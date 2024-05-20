@@ -36,7 +36,12 @@
 
 ```shell
 cd devops 
-docker-compose up 
+docker-compose up
+```
+
+Open another terminal and execute:
+
+```shell
 docker exec -it books_api /bin/bash
 chmod -R 775 ./storage
 chmod -R 775 ./bootstrap/cache
