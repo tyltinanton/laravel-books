@@ -1,0 +1,46 @@
+version: '3'
+services:
+    nginx:
+        image: nginx
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./nginx/com.library.conf:/etc/nginx/conf.d/com.library.conf
+            - ./../:/var/www/com.library
+        networks:
+            books-common:
+
+    postgres:
+        container_name: books_db
+        image: postgres:16.2-alpine
+        environment:
+            - POSTGRES_USER=book
+            - POSTGRES_PASSWORD=book
+            - POSTGRES_DATABASE=book
+        ports:
+            - '6543:5432'
+        volumes:
+            - postgres:/var/lib/postgresql/data
+        networks:
+            books-common:
+
+
+    api:
+        container_name: books_api
+        build:
+            context: ./api/
+        working_dir: /var/www/com.library
+        ports:
+            - "9000:9000"
+        volumes:
+            - ./../:/var/www/com.library
+            - ./api/env.docker:/var/www/com.library/.env
+
+        networks:
+            books-common:
+
+networks:
+    books-common:
+
+volumes:
+    postgres:

@@ -1,0 +1,223 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Library book API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/books": {
+            "get": {
+                "operationId": "cf699bc505f168d75b529d9b2ab007b0",
+                "responses": {
+                    "200": {
+                        "description": "Book successfully received"
+                    }
+                }
+            },
+            "put": {
+                "description": "Create a book",
+                "operationId": "119ec20e9cabe6699a5dbac537ed72f1",
+                "requestBody": {
+                    "description": "Book model",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "title": {
+                                        "description": "Title",
+                                        "type": "string"
+                                    },
+                                    "author": {
+                                        "description": "Author",
+                                        "type": "string"
+                                    },
+                                    "genre": {
+                                        "description": "Genre",
+                                        "type": "string"
+                                    },
+                                    "publisher": {
+                                        "description": "Publisher",
+                                        "type": "string"
+                                    },
+                                    "amount": {
+                                        "description": "Amount",
+                                        "type": "integer"
+                                    },
+                                    "price": {
+                                        "description": "Price",
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Book successfully added",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Invalid parameters",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Update a book",
+                "operationId": "efc8c7b101b55f9f8352e8de51e71f16",
+                "requestBody": {
+                    "description": "Book model",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "uuid": {
+                                        "description": "Uuid",
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "description": "Title",
+                                        "type": "string"
+                                    },
+                                    "author": {
+                                        "description": "Author",
+                                        "type": "string"
+                                    },
+                                    "genre": {
+                                        "description": "Genre",
+                                        "type": "string"
+                                    },
+                                    "publisher": {
+                                        "description": "Publisher",
+                                        "type": "string"
+                                    },
+                                    "amount": {
+                                        "description": "Amount",
+                                        "type": "integer"
+                                    },
+                                    "price": {
+                                        "description": "Price",
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Book successfully updated",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Invalid parameters",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a book",
+                "operationId": "a744fdf903cb617b15d42e28350a0925",
+                "requestBody": {
+                    "description": "Book model",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "uuid": {
+                                        "description": "Uuid",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Book successfully deleted",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Invalid parameters",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "description": "Publish a book",
+                "operationId": "80f50c716f0bbfab9c207fe27c3ddfe1",
+                "requestBody": {
+                    "description": "Book model",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "uuid": {
+                                        "description": "Uuid",
+                                        "type": "string"
+                                    },
+                                    "publisher": {
+                                        "description": "Publisher",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Book successfully deleted",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Invalid parameters",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
