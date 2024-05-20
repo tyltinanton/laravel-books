@@ -21,7 +21,7 @@ class BookUpdateController extends Controller
 
     /**
      * @OA\Post (
-     *    description="Update a book",
+     *    description="Update the book",
      *    path="/api/books",
      *     @OA\RequestBody(
      *          description="Book model",
@@ -64,7 +64,7 @@ class BookUpdateController extends Controller
      *                    ),
      *          )
      *      ),
-     *    @OA\Response(response="200", description="Book successfully updated",@OA\JsonContent()),
+     *    @OA\Response(response="200", description="The book successfully updated",@OA\JsonContent()),
      *    @OA\Response(response="422", description="Invalid parameters",@OA\JsonContent())
      * )
      *

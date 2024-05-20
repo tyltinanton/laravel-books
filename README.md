@@ -1,14 +1,14 @@
-## Test application for the book library service
+## Test API application for the library service
 
 ## Author
 
-   ### Tyltin Anton
+   ### Anton Tyltin
    ### https://djinni.co/q/50c6ce9b89/
     
 
 ## Tech stack
 
-* Framework - Laravel 
+* Framework - Laravel 11
 * PHP 8.3
 * PostgresSQL 16.2
 * Hexagonal Architecture
@@ -24,13 +24,13 @@
 * Book price in US Dollars
 
 
-## Available opertaions
+## Available operations
 
-* ``GET /api/books`` - Get list of the books
+* ``GET /api/books`` - Get the book list
 * ``PUT /api/books`` - Create a new book
 * ``POST /api/books`` - Update the book
-* ``PATCH /api/books`` - Publish book
-* ``DELETE /api/books`` - Delete a book
+* ``PATCH /api/books`` - Publish the book
+* ``DELETE /api/books`` - Delete the book
 
 ## LOCAL VERSION
 
@@ -55,4 +55,4 @@ After this open http://localhost:8000/docs
 
 ## License
 
-It's test application for the public audience
+It's a test application for the public audience

@@ -59,7 +59,7 @@ class BookInsertController extends Controller
      *                    ),
      *          )
      *      ),
-     *    @OA\Response(response="200", description="Book successfully added",@OA\JsonContent()),
+     *    @OA\Response(response="200", description="The book successfully added",@OA\JsonContent()),
      *    @OA\Response(response="422", description="Invalid parameters",@OA\JsonContent())
      * )
      *

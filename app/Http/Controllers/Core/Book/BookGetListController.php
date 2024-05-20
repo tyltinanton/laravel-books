@@ -22,7 +22,7 @@ class BookGetListController extends Controller
     /**
      * @OA\Get (
      *    path="/api/books",
-     *    @OA\Response(response="200", description="Book successfully received")
+     *    @OA\Response(response="200", description="Book list successfully received")
      * )
      *
      * @param Request $request

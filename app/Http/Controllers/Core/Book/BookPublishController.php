@@ -39,7 +39,7 @@ class BookPublishController extends BaseController
      *                    ),
      *           )
      *       ),
-     *     @OA\Response(response="200", description="Book successfully deleted",@OA\JsonContent()),
+     *     @OA\Response(response="200", description="The book successfully deleted",@OA\JsonContent()),
      *     @OA\Response(response="422", description="Invalid parameters",@OA\JsonContent())
      *  )
      *

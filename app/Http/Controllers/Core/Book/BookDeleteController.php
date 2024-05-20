@@ -24,7 +24,7 @@ class BookDeleteController extends Controller
 
     /**
      * @OA\Delete (
-     *     description="Delete a book",
+     *     description="Delete the book",
      *     path="/api/books",
      *      @OA\RequestBody(
      *           description="Book model",
