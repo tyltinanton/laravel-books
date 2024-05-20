@@ -35,13 +35,18 @@
 ## LOCAL VERSION
 
 ```shell
+cd devops 
+docker-compose up 
 docker exec -it books_api /bin/bash
 chmod -R 775 ./storage
 chmod -R 775 ./bootstrap/cache
 composer install
 php artisan migrate
 php artisan test
+php artisan l5-swagger:generate
 ```
+
+After this open http://localhost:8000/docs
 
 ## License
 
